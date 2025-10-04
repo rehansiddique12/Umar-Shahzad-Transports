@@ -1079,6 +1079,17 @@ header.main-header .header-sticky.active{
     list-style: none;
 }
 
+/* Target the main nav item */
+.nav-item.submenu:hover > a {
+  color: white;
+}
+
+/* Optionally, also make submenu items white on hover */
+.nav-item.submenu ul li a:hover {
+  color: white;
+}
+
+
 .about-content-list ul li{
 	position: relative;
     color: var(--primary-color);
