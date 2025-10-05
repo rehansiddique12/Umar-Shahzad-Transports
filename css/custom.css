@@ -3477,25 +3477,6 @@ header.main-header .header-sticky.active{
 /***      19. Blog Single css     ***/
 /************************************/
 
-.image-anime img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain; /* Ensures full image is visible without cropping */
-  object-position: center;
-  display: block;
-  transition: none; /* Removes zoom or animation effects */
-}
-
-/* Optional: if you want to fix figure dimensions */
-figure.image-anime {
-  width: 100%;
- /* adjust as needed */
-  height: auto;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-
 .page-single-post{
 	padding: 100px 0;
 }
@@ -3508,7 +3489,7 @@ figure.image-anime {
 .post-image figure{
 	display: block;
 	border-radius: 40px;
-	
+	overflow: hidden;
 }
 
 .post-image figure,
