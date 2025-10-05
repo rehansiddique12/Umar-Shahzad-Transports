@@ -2334,7 +2334,7 @@ header.main-header .header-sticky.active{
 
 .page-header{
 	position: relative;
-	background: url('../images/page-header-bg.jpg') no-repeat center center;
+	background: url('../images/main/03.jpg') no-repeat center center;
 	background-size: cover;
 	padding: 150px 0;
 }
@@ -2403,7 +2403,7 @@ header.main-header .header-sticky.active{
 
 .mission-vision-bg{
 	position: relative;
-	background: url('../images/our-service-bg.jpg');
+	background: url('../images/main/02.jpg');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -3477,6 +3477,25 @@ header.main-header .header-sticky.active{
 /***      19. Blog Single css     ***/
 /************************************/
 
+.image-anime img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* Ensures full image is visible without cropping */
+  object-position: center;
+  display: block;
+  transition: none; /* Removes zoom or animation effects */
+}
+
+/* Optional: if you want to fix figure dimensions */
+figure.image-anime {
+  width: 100%;
+ /* adjust as needed */
+  height: auto;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+
 .page-single-post{
 	padding: 100px 0;
 }
@@ -3489,7 +3508,7 @@ header.main-header .header-sticky.active{
 .post-image figure{
 	display: block;
 	border-radius: 40px;
-	overflow: hidden;
+	
 }
 
 .post-image figure,
