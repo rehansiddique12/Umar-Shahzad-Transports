@@ -353,7 +353,7 @@ body{
 
 .loading{
 	border: 1px solid transparent;
-	border-color: transparent var(--white-color) transparent var(--white-color);
+	border-color: transparent var(--accent-color) transparent green ;
 	animation: rotate-loading 1.5s linear 0s infinite normal;
 	transform-origin: 50% 50%;
 }
@@ -367,8 +367,98 @@ body{
 	position: absolute;
 	top: 50%;
 	left: 50%;
-	max-width: 66px;
+	max-width: 1000px;
 	transform: translate(-50%, -50%);
+}
+
+
+/* whatsapp icon CSS:  */
+.toggle-button {
+  width: 50px;
+  height: 50px;
+  background: url("https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg")
+    no-repeat center;
+  background-size: contain;
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1000;
+}
+
+.toggle-button.cross {
+  background: url("https://img.icons8.com/ios-filled/50/ffffff/xbox-x.png")
+    no-repeat center;
+  background-size: contain;
+  background-color: #075e54;
+  border-radius: 50%;
+}
+
+.chat-container {
+  display: none;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  bottom: 80px;
+  left: 20px;
+  z-index: 999;
+}
+
+.chat-container.active {
+  display: block;
+}
+
+.header {
+  background-color: #075e54;
+  border-radius: 10px 10px 0 0;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.chat-messages {
+  padding: 10px;
+  height: 200px;
+  overflow-y: auto;
+}
+
+.message {
+  margin: 5px 0;
+  padding: 5px;
+  color: green;
+  background-color: #e1ffc7;
+  border-radius: 5px;
+  max-width: 70%;
+}
+
+.input-container {
+  display: flex;
+  padding: 10px;
+}
+
+.input-container input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.send-btn {
+  background-color: #075e54;
+  border: none;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  margin-left: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.2s;
 }
 
 @keyframes rotate-loading{
@@ -1168,7 +1258,7 @@ header.main-header .header-sticky.active{
 .our-services{
 	position: relative;
 	padding: 100px 0 280px;
-	background: url('../images/our-service-bg.jpg') no-repeat center center;
+	background: url('../images/main/ban1.png') no-repeat center center;
 	background-size: cover;
 }
 
@@ -1474,9 +1564,7 @@ header.main-header .header-sticky.active{
 	margin-bottom: 30px;
 }
 
-.what-we-do-item .icon-box img{
-	max-width: 50px;
-}
+
 
 .what-we-item-content h3{
 	font-size: 20px;
@@ -2334,9 +2422,10 @@ header.main-header .header-sticky.active{
 
 .page-header{
 	position: relative;
-	background: url('../images/main/03.jpg') no-repeat center center;
+	height: 70vh;
+	background: url('../images/main/ban2.jpg') no-repeat center center;
 	background-size: cover;
-	padding: 150px 0;
+	padding: 250px 0;
 }
 
 .page-header::before{
@@ -4873,9 +4962,7 @@ header.main-header .header-sticky.active{
 		margin-bottom: 20px;
 	}
 
-	.service-item .icon-box img{
-		max-width: 50px;
-	}
+	
 
 	.service-body{
 		margin-bottom: 30px;
