@@ -2620,7 +2620,7 @@ header.main-header .header-sticky.active{
     top: 50%;
     transform: translateY(-50%);
     left: 0;
-    background: url('../images/icon-check.svg') no-repeat center left;
+    background: url('../images/main/icon-check.png') no-repeat center left;
     background-size: cover;
 }
 
@@ -4193,6 +4193,7 @@ header.main-header .header-sticky.active{
 
 .team-member-content h2 span{
     font-weight: 700;
+	color: #2E3192;
 }
 
 .team-member-content p{
