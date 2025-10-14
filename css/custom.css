@@ -2423,7 +2423,7 @@ header.main-header .header-sticky.active{
 .page-header{
 	position: relative;
 	height: 70vh;
-	background: url('../images/main/ban2.jpg') no-repeat center center;
+	background: url('../images/main/ban1.png') no-repeat center center;
 	background-size: cover;
 	padding: 250px 0;
 }
@@ -4840,6 +4840,7 @@ header.main-header .header-sticky.active{
 	.section-title h2{
 		font-size: 40px;
 	}
+	
 
 	.section-title p{
 		margin-top: 15px;
